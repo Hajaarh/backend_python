@@ -1,0 +1,7 @@
+# Fichier .gitignore pour ignorer les dossiers
+
+# Ignorer l'environnement virtuel
+venv/
+env/
+*.venv/
+.env_venom/
