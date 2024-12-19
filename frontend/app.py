@@ -1,20 +1,20 @@
 import streamlit as st
-import requests
-import pandas as pd
-st.title("Tableau de bord eCommerce")
-# Récupérer les KPI depuis l'API
-response = requests.get("http://127.0.0.1:8000/kpi/orders-per-customer")
-if response.status_code == 200:
-    data = response.json()["data"]
-    df = pd.DataFrame(data)
-    st.bar_chart(df.set_index("_id")["total_orders"])
-else:
-    st.error("Erreur lors du chargement des données")
+from st_pages import get_nav_from_toml, add_page_title
 
-"""response2 = requests.get("http://127.0.0.1:8000/kpi/orders-per-category")
-if response2.status_code == 200:
-    data = response2.json()["data"]
-    df = pd.DataFrame(data)
-    st.bar_chart(df.set_index("_id")["total_orders"])
-else:
-    st.error("Erreur lors du chargement des données")"""
+st.set_page_config(page_title="Page d'Accueil")
+st.title("Test")
+
+# st.set_page_config(layout="wide")
+# nav = get_nav_from_toml(".streamlit/pages_sections.toml")
+# pg = st.navigation(nav)
+# add_page_title(pg)
+# pg.run()
+
+# nav = get_nav_from_toml(".streamlit/pages_sections.toml")
+
+# if not nav:
+#     st.error("Aucune page trouvée dans la configuration de navigation.")
+# else:
+#     pg = st.navigation(nav)
+#     add_page_title(pg)
+#     pg.run()

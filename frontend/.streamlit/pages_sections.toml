@@ -1,0 +1,14 @@
+[[pages]]
+path = "../app.py"
+name = "Main"
+icon = ":books:"
+
+[[pages]]
+path = "frontend/pages/page1.py"
+name = "Page 1"
+icon = "🏠"
+
+[[pages]]
+path = "frontend/pages/page2.py"
+name = "Page 2"
+icon = ":books:"
