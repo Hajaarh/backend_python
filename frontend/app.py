@@ -7,15 +7,24 @@ import plotly.express as px
 st.set_page_config(page_title="Dashboard eCommerce", layout="wide")
 
 # Sidebar: Navigation
-st.sidebar.title("Navigation")
-menu = st.sidebar.radio(
-    "Choisir une section:",
+st.sidebar.title("Main")
+menu = st.sidebar.selectbox(
+    "KPI Principaux",
     [
         "📊 KPI des ventes",
         "💰 KPI des profits",
         "🏙️ Analyse géographique",
         "📅 Analyse temporelle",
         "🏆 Top produits",
+    ],
+)
+
+st.sidebar.title("Profilage Client Marketing")
+menu = st.sidebar.selectbox(
+    "Suivi & Marketing",
+    [
+        "Profilage Client",
+        "Optimisation des remises"
     ],
 )
 
