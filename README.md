@@ -78,7 +78,7 @@ Activer l’environnement virtuel :
 - **Sur Windows** :
 
 ```bash
-env_venom\Scripts\activate
+env\Scripts\activate
 ```
 
 - **Sur macOS/Linux** :
