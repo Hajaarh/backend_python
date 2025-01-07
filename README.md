@@ -148,7 +148,7 @@ Cela installera toutes les bibliothèques nécessaires, comme FastAPI, Streamlit
 env\Scripts\activate
      ```
      ```bash
-source env_venom/bin/activate
+source env/bin/activate
      ```
 
 2. Lancez l’application Streamlit :
