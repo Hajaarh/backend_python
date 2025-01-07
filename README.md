@@ -143,13 +143,14 @@ Cela installera toutes les bibliothèques nécessaires, comme FastAPI, Streamlit
 #### 4.2 Démarrer le frontend (Streamlit)
 
 1. Dans un nouveau terminal, activez l’environnement virtuel :
-   
-     ```bash
-env\Scripts\activate
-     ```
-     ```bash
-source env/bin/activate
-     ```
+
+   ```bash
+   env\Scripts\activate
+   ```
+
+   ```bash
+   source env/bin/activate
+   ```
 
 2. Lancez l’application Streamlit :
 
